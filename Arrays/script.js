@@ -1,0 +1,2 @@
+// Arrays can be described as a data structure that can be store collection of data , in a linear contiguous orientation in the memory 
+// data structure these are different structures that can prepare to store data in  different ways depending on our use case 
