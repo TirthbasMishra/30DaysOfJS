@@ -118,3 +118,36 @@
 // for(const val of arr){
 //    console.log(val);
 // }
+
+// var createHelloWorld = function() {
+    
+//     return function(...args) {
+//         return "Hello World";
+//     }
+// };
+
+
+//   const f = createHelloWorld();
+//   f(); // "Hello World"
+
+
+//   let names=["Hari","Shyam","Raghu","Ram"];
+
+//   for(let name of names){
+//     console.log(name);
+//   }
+
+//   for(let index in names){
+//     console.log(index)
+//   }
+
+let address ={
+    name:"tirhbas",
+    pin:755015,
+    village:"Mahilia"
+}
+
+for(let val of Object.keys(address)){
+    console.log(val,address[val])
+}
+
