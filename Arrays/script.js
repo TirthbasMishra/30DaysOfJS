@@ -17,10 +17,33 @@
 // for(let name of studentNames){
 //    console.log(name);
 // }
-let studentNames =["chamnan","hitesh","govinda","nilesh","saif"];
+// let studentNames =["chamnan","hitesh","govinda","nilesh","saif"];
 
-let filterNames = studentNames.filter(function(name,index){
-      return index%2==0;
-});
+// let filterNames = studentNames.filter(function(name,index){
+//       return index%2==0;
+// });
 
-console.log(filterNames);
+// console.log(filterNames);
+
+// let[firstname,secondname]= studentNames;
+
+let arr = [350,360,370,380,310]
+
+// . Map prices to include GST (18%)
+
+let gstArr = arr.map(val => +(val * 0.18).toFixed(1));
+console.log(gstArr)
+// . Reduce salaries to calculate total payroll
+let newSal = arr.reduce((acc,val)=>acc+val,0)
+// . Find the first student with grade 
+let value = arr.find(n=>n>375);
+// . Write a function to reverse an array
+arr.reverse();
+// . Sort array of ages in ascending order
+arr.sort((a,b)=>a-b);
+// . Destructure first two elements of an array
+let [fistnum, ,secondnum]=arr;
+// . Use some() to check if any student failed
+let pass = arr.some(n=>n>305)
+// . Use spread to copy and add new item
+let newArr = [...arr,340];
