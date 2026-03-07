@@ -18,7 +18,7 @@
         height: 100%;
       }
 
-      div {
+      #main {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,11 +34,30 @@
         letter-spacing: -1rem;
         user-select: none;
       }
+
+      input{
+        display: none;
+      }
+
+      #btn{
+        padding: 12px 22px;
+        background-color: rgb(17, 155, 114);
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+      #btn:hover{
+        background-color: #0b7044;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <h1>A</h1>
+    <div id="main">
+      <!-- <h1>A</h1> -->
+       <input type="file" name="" id="fileInp">
+        <div id="btn">
+          Upload File
+        </div>
     </div>
     <script src="./sript.js"></script>
   </body>
